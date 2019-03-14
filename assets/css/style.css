@@ -1,0 +1,936 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+	margin:0;
+	padding:0;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	font-size:100%;
+}
+body {
+	width:100%;
+	background:#FFF;
+	font-family:'Roboto Condensed', sans-serif;
+}
+/*GENÉRICOS*/
+h1 {
+	font-size:4.8em;
+}
+h2 {
+	font-size:3em;
+}
+h3 {
+	font-size:1.875em;
+}
+h4 {
+	font-size:1.171875em;
+}
+h5 {
+	font-size:.73242188em;
+}
+h6 {
+	font-size:.45776367em;
+}
+p {
+	font-size:1em;
+}
+a {
+	text-decoration:none;
+}
+a:focus {
+	outline:0;
+}
+li {
+	list-style:none;
+}
+header, section, .alternado, .formulario, footer {
+	width:100%;
+	margin:auto;
+	float:left;
+}
+.interior-header, .interior-subnav, .interior, .secciones-interior {
+	width:1280px;
+	margin:auto;
+	display:block;
+}
+.interior {
+	padding:30px 0;
+}
+/*HEADER*/
+header {
+	background:url(/assets/img/textura.jpg) repeat;
+}
+.interior-header {
+	padding:70px 0 65px 0;
+}
+#logo {
+	width:130px;
+	float:left;
+	position:absolute;
+	top:0;
+	z-index:9999;
+	background:#FFF;
+	-webkit-box-shadow:0 1px 5px 0 rgba(50,50,50,0.5);
+	-moz-box-shadow:0 1px 5px 0 rgba(50,50,50,0.5);
+	box-shadow:0 1px 5px 0 rgba(50,50,50,0.5);
+	padding:20px 0 10px 0;
+}
+#logo h1 {
+	display:none;
+}
+#logo a > img {
+	width:100%;
+	height:100%;
+}
+nav input[type=checkbox] {
+	display:none;
+}
+nav input[type=checkbox]:checked ~ #menu {
+	display:block;
+}
+nav ul {
+	margin:0;
+	padding:0;
+	position:absolute;
+	margin-left:10%;
+}
+nav ul > li {
+	display:inline-block;
+	margin:0 0.7em;
+}
+nav ul > li:nth-child(6) {
+	background:#901F45;
+	padding:0 0.7em;
+}
+nav ul > li:hover {
+	border-bottom:3px solid #901F45;
+}
+nav ul > li:hover:last-child {
+	background:#000;
+	border-bottom:0;
+}
+nav ul li:hover ul a {
+	height:35px;
+	display:block;
+	background:#555;
+	line-height:35px;
+}
+nav ul li > a {
+	height:35px;
+	display:block;
+	color:#FFF;
+	font-size:1.4em;
+	font-weight:100;
+	text-align:center;
+	line-height:35px;
+}
+nav ul li > a:hover + .hidden, .hidden:hover {
+	display:none;
+}
+nav ul li > a:hover + .hidden2, .hidden2:hover {
+	display:inline-flex;
+}
+nav ul li > ul {
+	width:50%;
+	height:auto;
+	display:none;
+	z-index:9999;
+	left:45%;
+	padding-top:26px;
+}
+nav ul li ul > li {
+	width:100%;
+	display:block;
+	float:none;
+	margin:0;
+}
+nav ul li ul > li:hover {
+	border-bottom:0;
+}
+nav ul li ul li > a {
+	width:100%;
+}
+nav ul li ul li > a:hover {
+	background:#777;
+}
+.show-menu {
+	color:#FFF;
+	font-size:2em;
+	text-align:center;
+	display:none;
+	padding:15px 0;
+}
+.subnav {
+	width:100%;
+	position:absolute;
+	top:131px;
+	z-index:5;
+	display:none;
+	background:#555;
+}
+.interior-subnav a {
+	width:50%;
+	float:left;
+	text-align:center;
+}
+.interior-subnav a:hover {
+	background:#777;
+}
+.subnav-img, .subnav-name {
+	display:inline-block;
+}
+.subnav-img > img {
+	width:100px;
+	height:auto;
+}
+.subnav-name {
+	color:#FFF;
+	font-size:2.000em;
+	line-height:2.5;
+	vertical-align:top;
+}
+#motormundo-header {
+	width:150px;
+	height:auto;
+	float:right;
+	margin-top:-20px;
+}
+#motormundo-header a > img {
+	width:100%;
+	height:100%;
+}
+/*HOME*/
+.alternado:nth-child(even) {
+	background:#999;
+}
+.alternado:nth-child(odd) {
+	background:url(/assets/img/textura.jpg) repeat;
+}
+.cajas-home {
+	width:27.6%;
+	display:table-cell;
+	color:#CCC;
+	text-align:center;
+	margin:0 55px;
+}
+.cajas-home:first-child {
+	margin-left:0;
+}
+.cajas-home:last-child {
+	margin-right:0;
+}
+.cajas-home:hover {
+	color:#FFF;
+}
+.i-arriba {
+	width:30px;
+	height:30px;
+	background:#CCC;
+	border-radius:10%;
+	color:#333;
+	text-align:center;
+	padding:10px;
+}
+.cajas-home h1 {
+	font-size:2.5em;
+}
+.cajas-home p {
+	font-size:1.2em;
+}
+.cajas-home p > a {
+	color:#FFF;
+}
+.cajas-home p > a:hover {
+	color:#901F45;
+}
+.middle {
+	width:5%;
+	display:table-cell;
+}
+.cajas-home2 {
+	width:23.43%;
+	display:table-cell;
+	color:#000;
+	text-align:center;
+	margin:0 20px;
+	padding:30px 50px;
+}
+.cajas-home2:first-child {
+	background:#777;
+	margin-left:0;
+}
+.cajas-home2:nth-child(3) {
+	background:#CCC;
+}
+.cajas-home2:last-child {
+	background:#F0F0F0;
+	margin-right:0;
+}
+.i-arriba2 {
+	color:#000;
+	text-align:center;
+}
+.cajas-home2 h1 {
+	font-size:2em;
+	color:#000;
+}
+.cajas-home2 p {
+	font-size:1em;
+	color:#000;
+}
+.cajas-home2-btn {
+	display:block;
+	background:#901F45;
+	color:#FFF;
+	padding:10px;
+}
+.cajas-home2-btn:hover {
+	background:#000;
+}
+.cajas-home2-flecha {
+	color:#901F45;
+}
+.cajas-home2-flecha:hover {
+	color:#000;
+}
+.middle2 {
+	width:1%;
+	display:table-cell;
+}
+span.blanco i, span.blanco h1, span.blanco p {
+	color:#FFF;
+}
+/*NOSOTROS*/
+article h1 {
+	color:#555;
+	font-size:2.750em;
+	text-align:center;
+}
+article p {
+	color:#555;
+	text-align:justify;
+	line-height:1.5em;
+}
+.col-izq {
+	width:45%;
+	float:left;
+}
+.col-der {
+	width:50%;
+	float:right;
+}
+figcaption > img {
+	width:100%;
+	height:100%;
+}
+/*MODELOS*/
+.banner {
+	width:100%;
+	margin:auto;
+	display:block;
+}
+.banner > img {
+	width:100%;
+	height:100%;
+	vertical-align:bottom;
+}
+#secciones {
+	width:100%;
+	margin:auto;
+	display:block;
+	background:#333;
+	border-top:1px solid #901F45;
+	text-align:center;
+}
+.secciones-interior ul {
+	margin:0;
+	padding:0;
+}
+.secciones-interior ul > li {
+	display:inline-block;
+	padding:0 15px;
+}
+.secciones-interior ul > li:first-child {
+	font-size:1.5em;
+	font-weight:800;
+	padding-left:0;
+}
+.secciones-interior ul > li:last-child {
+	background:#901F45;
+	padding:15px;
+}
+.secciones-interior ul > li:hover:last-child {
+	background:#000;
+}
+.secciones-interior ul li > a {
+	color:#FFF;
+	font-size:1.375em;
+}
+.alternado-modelo {
+	text-align:center;
+	padding:50px 0;
+}
+.alternado-modelo:nth-child(even) {
+	background:#CCC;
+}
+.alternado-modelo:nth-child(odd) {
+	background:#FFF;
+}
+.alternado-modelo h1, .alternado-modelo h3 {
+	color:#555;
+	font-size:2.750em;
+	margin-top:0;
+}
+.alternado-modelo p {
+	color:#555;
+	font-size:1.500em;
+	font-weight:100;
+	line-height:1.5;
+}
+.alternado-modelo-btn {
+	background:#901F45;
+	color:#FFF;
+	padding:10px;
+}
+.alternado-modelo-btn:hover {
+	background:#000;
+}
+.alternado-modelo i {
+	margin-left:10px;
+}
+.Collage {
+	display:inline-block;
+}
+.Collage a img {
+	width:100%;
+	height:100%;
+	vertical-align:bottom;
+}
+.Image_Wrapper {
+	display:inline-block;
+	margin:10px;
+}
+.botones-ft {
+	text-align:right;
+}
+.garantia, .disclaimer {
+	color:#FFF;
+	text-align:left;
+	font-style:italic;
+	padding:10px;
+}
+.garantia {
+	background:#901F45;
+	border:1px solid #000;
+	border-bottom:0;
+}
+table {
+	width:100%;
+	border-collapse:collapse;
+}
+table td, table th {
+	color:#000;
+	text-align:left;
+	border:1px solid #000;
+	padding:5px;
+}
+tbody:nth-child(odd) {
+	background:#CCC;
+}
+tr > th:first-child, tr > td:last-child {
+	text-align:center;
+}
+.disclaimer {
+	background:#555;
+	border:1px solid #000;
+	border-top:0;
+}
+.cotizar {
+	width:100%;
+	display:block;
+	background:url(/assets/img/parallax-cotizar.jpg) no-repeat center;
+	background-size:cover;
+	padding:50px 0;
+}
+.cotizar .btn {
+	width:300px;
+	margin:auto;
+	display:block;
+	color:#FFF;
+	text-align:center;
+	border:3px solid #FFF;
+	border-radius:5px;
+	padding:10px;
+}
+.cotizar .btn:hover {
+	background:#000;
+}
+/*PRUEBA DE MANEJO*/
+span.titulo h1 {
+	color:#555;
+	font-size:2.750em;
+	text-align:center;
+	margin-top:0;
+}
+.formulario input[type="text"], .formulario textarea {
+	width:100%;
+	border:1px solid #901F45;
+	border-radius:0;
+	-webkit-appearance:none;
+	outline:none;
+	font-size:0.875em;
+	box-sizing:border-box;
+	margin:10px 0;
+	padding:10px;
+}
+.formulario input[type="text"] {
+	float:left;
+}
+.formulario input[type="text"]:focus, .formulario textarea:focus {
+	border-color:#000;
+}
+.formulario textarea {
+	min-height:157px;
+	float:right;
+	resize:none;
+}
+.formulario input[type="submit"] {
+	width:100%;
+	background:#901F45;
+	border:none;
+	border-radius:0;
+	-webkit-appearance:none;
+	color:#FFF;
+	font-size:1.000em;
+	margin:10px 0;
+	padding:10px;
+}
+.formulario input[type="submit"]:hover {
+	background:#000;
+}
+.col-form-izq {
+	width:48.5%;
+	float:left;
+}
+.col-form-der {
+	width:48.5%;
+	float:right;
+}
+span.legal a {
+	color:#901F45;
+}
+span.legal a:hover {
+	color:#000;
+}
+/*SELECCIONAR MODELO*/
+.seleccion-modelo {
+	width:100%;
+	margin:auto;
+	display:block;
+	text-align:center;
+}
+.seleccion-modelo > img {
+	width:50%;
+	height:50%;
+}
+a.modelo {
+	display:inline-block;
+	color:#333;
+	margin:0 25px;
+}
+a.modelo > img {
+	width:100%;
+	height:100%;
+	margin:auto;
+	display:block;
+}
+/*COTIZAR*/
+.interior-cotizar {
+	width:1000px;
+	margin:auto;
+	display:block;
+	padding:30px 0;
+}
+.btn-version {
+	width:300px;
+	margin:10px auto;
+	display:block;
+	color:#FFF;
+	text-align:center;
+	background:#901F45;
+	padding:10px;
+}
+.btn-version:hover {
+	background:#000;
+}
+.formulario select {
+	width:100%;
+	border:1px solid #901F45;
+	background:transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 99% center;
+	border-radius:0;
+	-webkit-appearance:none;
+	margin:10px 0;
+	padding:10px;
+}
+input:focus, select:focus {
+	outline:none;
+}
+/*ERROR*/
+a.volver {
+	color:#000;
+	text-decoration:none;
+}
+/*FOOTER*/
+footer {
+	background:url(/assets/img/textura.jpg) repeat;
+	padding:15px 0;
+}
+footer a {
+	color:#CCC;
+	font-weight:100;
+}
+footer a:hover {
+	color:#FFF;
+}
+.lista {
+	width:25%;
+	float:left;
+}
+span.title {
+	color:#FFF;
+	font-size:1.375em;
+}
+.lista ul {
+	padding-left:0;
+}
+.lista ul > li {
+	padding:10px 0;
+}
+#motormundo-footer {
+	width:200px;
+	height:auto;
+	float:right;
+}
+#motormundo-footer a > img {
+	width:100%;
+	height:100%;
+}
+.legales {
+	width:100%;
+	float:left;
+	color:#CCC;
+	font-weight:100;
+	border-top:1px solid #CCC;
+}
+
+@media screen and (min-width:1025px) and (max-width:1280px) {
+body {
+	font-size:95%;
+}
+#logo {
+	width:100px;
+	padding:15px 0 5px 0;
+}
+#motormundo-header {
+	width:130px;
+}
+.interior-header, .interior, .secciones-interior {
+	width:100%;
+	margin:auto;
+	display:block;
+}
+.interior-header {
+	padding:50px 0 55px 0;
+}
+nav ul {
+	margin-left:14%;
+}
+nav ul > li {
+	margin:0 0.5em;
+}
+nav ul li > a {
+	font-size:1.2em;
+}
+nav ul li > ul {
+	left:41%;
+	padding-top:16px;
+}
+.subnav {
+	top:101px;
+}
+.interior-subnav {
+	width:100%
+}
+.interior {
+	padding:30px 10px;
+	box-sizing:border-box;
+}
+.cajas-home h1 {
+	font-size:2em;
+}
+.cajas-home p {
+	font-size:1em;
+}
+.secciones-interior ul li > a {
+	font-size:1.2em;
+}
+.interior-cotizar {
+	width:980px;
+	padding:15px;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+body {
+	font-size:90%;
+}
+.fa-2x {
+	font-size:1.5em !important;
+}
+.fa-4x {
+	font-size:2.5em !important;
+}
+.interior-header {
+	width:100%;
+	margin:auto;
+	display:block;
+	box-sizing:border-box;
+	padding:30px 0 50px 0;
+}
+.interior {
+	width:100%;
+	margin:auto;
+	display:block;
+	box-sizing:border-box;
+	padding:15px 10px;
+}
+#logo {
+	width:80px;
+	padding:5px 0;
+}
+nav ul {
+	margin-left:13%;
+}
+nav ul li > a {
+	font-size:0.8em;
+}
+nav ul li > ul {
+	left:40%;
+	padding-top:11px;
+}
+.subnav {
+	top:76px;
+}
+.interior-subnav {
+	width:100%
+}
+.subnav-img > img {
+	width:80px;
+	height:auto;
+}
+.subnav-name {
+	font-size:1.5em;
+}
+#motormundo-header {
+	width:130px;
+	height:auto;
+}
+.cajas-home h1 {
+	font-size:1.8em;
+}
+.cajas-home p {
+	font-size:1em;
+}
+.i-arriba {
+	width:20px;
+	height:20px;
+}
+.cajas-home2 {
+	padding:15px 25px;
+}
+.cajas-home2 h1 {
+	font-size:1.8em;
+}
+.cajas-home2 p {
+	font-size:1em;
+}
+.secciones-interior {
+	width:100%;
+	margin:auto;
+	display:block;
+}
+.secciones-interior ul li > a {
+	font-size:0.8em;
+}
+.alternado-modelo {
+	padding:15px 0;
+}
+.interior-cotizar {
+	width:700px;
+	padding:10px 0;
+}
+#motormundo-footer {
+	width:150px;
+	height:auto;
+	margin-top:-15px;
+}
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+body {
+	font-size:75% !important;
+}
+.fa-2x {
+	font-size:1.5em !important;
+}
+.fa-4x {
+	font-size:2.5em !important;
+}
+.interior-header {
+	width:100%;
+	margin:auto;
+	display:block;
+	padding:0;
+}
+#logo {
+	width:60px;
+	padding:5px 0;
+}
+.interior-subnav {
+	width:0;
+}
+nav ul {
+	display:none;
+	position:static;
+	margin-left:0;
+}
+nav ul > li, nav ul li > a {
+	width:100%;
+	margin:0;
+	padding:0;
+}
+nav ul > li:last-child {
+	padding:0;
+}
+nav ul > li:hover {
+	border-bottom:0;
+}
+nav ul li > a:hover + .hidden, .hidden:hover, nav ul li > a:hover + .hidden2, .hidden2:hover {
+	display:block;
+}
+nav ul li > ul {
+	width:100%;
+	margin-left:0;
+	padding-top:0;
+}
+nav li ul li a {
+	text-align:center;
+	padding:0;
+}
+.show-menu {
+	display:block;
+}
+.subnav {
+	visibility:hidden;
+}
+.interior {
+	width:100%;
+	margin:auto;
+	display:table;
+	box-sizing:border-box;
+	padding:10px;
+}
+#motormundo-header {
+	display:none;
+}
+.cajas-home {
+	width:100%;
+	display:block;
+	margin:10px 0;
+}
+.cajas-home2 {
+	width:100%;
+	display:block;
+	margin:10px 0;
+	box-sizing:border-box;
+	padding:10px 15px;
+}
+.i-arriba {
+	width:20px;
+	height:20px;
+}
+.middle, .middle2 {
+	display:none;
+}
+.col-izq, .col-der {
+	width:100%;
+}
+#secciones {
+	display:none;
+}
+.alternado-modelo {
+	padding:25px 0;
+}
+.alternado-modelo p {
+	font-size:1.2em;
+}
+.alternado-modelo-btn, .btn-version {
+	width:100%;
+	display:block;
+	margin:5px auto;
+	box-sizing:border-box;
+}
+.Collage {
+	padding:0;
+}
+.Image_Wrapper {
+	width:100% !important;
+	display:block;
+	margin:10px 0;
+}
+.cotizar {
+	padding:25px 0;
+}
+.cotizar .btn {
+	width:250px;
+}
+.botones-ft {
+	text-align:center;
+}
+.interior-cotizar {
+	width:100%;
+	box-sizing:border-box;
+	padding:10px;
+}
+.btn-version {
+	width:100%;
+	margin:auto;
+	display:block;
+}
+.col-form-izq, .col-form-der {
+	width:100%;
+}
+a.modelo {
+	margin:15px auto;
+}
+.lista {
+	display:none;
+}
+.lista:nth-child(4) {
+	width:100%;
+	display:block;
+	margin:0 auto 10px auto;
+}
+#motormundo-footer {
+	width:150px;
+	height:auto;
+	margin:auto;
+	float:none;
+}
+.legales {
+	text-align:center;
+}
+}
